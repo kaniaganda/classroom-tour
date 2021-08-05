@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+* {
+    font-family: 'Baloo 2', cursive;
+    font-weight: 100;
+}
+
+.section-content {
+    max-width: 600px;
+    margin: 0 auto 0 auto;
+    padding: 0 5% 0 5%;
+    text-align: center;
+}
+
+.section-header {
+    font-family: 'Londrina Solid', cursive;
+    text-align: center;
+}
