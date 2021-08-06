@@ -55,6 +55,7 @@ html {
   .polaroid img {
     display: block; /* why use block instead of in-line block? */
     width: 250px;
+    margin: 0 auto;
   }
 
   .polaroid a:hover {
