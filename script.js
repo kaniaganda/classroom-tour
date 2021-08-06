@@ -8,10 +8,13 @@ descriptions[0] = "Today, we learned about eighth notes."
 descriptions[1] = "We also learned about parts of the violin."
 descriptions[2] = "For homework, we are practicing relaxed and balanced bow hold."
 
-var index = -1;
+var index = 0;
 
 function showPreviousImage() {
-    if (index > 0) {
+    if (index == -1) {
+        return;
+    }
+    else if (index > 0) {
         index -= 1;
     }
 
@@ -29,11 +32,11 @@ function showNextImage() {
 }
 
 function getImage() {
-    var image = document.getElementById("image");
+    var image = document.getElementById("polaroid-image");
     image.src = images[index];
 }
 
 function getDescription() {
-    var description = document.getElementById("polaroid");
+    var description = document.getElementById("polaroid-description");
     description.title = descriptions[index];
 }
