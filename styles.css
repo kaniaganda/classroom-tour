@@ -4,12 +4,13 @@
 * {
     font-family: 'Baloo 2', cursive;
     font-weight: 100;
-    
+    /* font-size: 1em; how come when I change font sizze to 1.2 everything turns big, but  it does not happen if I do it in another area */
 }
 
 html {
     height: 100%;
     background-image: linear-gradient(to bottom right, #E3FFFF, #86FFFF);
+    font-size: 1em;
 }
 
 .section-content {
@@ -23,4 +24,45 @@ html {
 .section-header {
     font-family: 'Londrina Solid', cursive;
     text-align: center;
+    font-size: 2em;
 }
+
+.polaroid a {
+    background: #ffffff;
+    display: inline-block;
+    margin: 55px 75px 30px;
+    padding: 15px 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    /* -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3); */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    /*-webkit-transition: all .20s linear;
+    -moz-transition: all .20s linear; */
+    transition: all .20s linear;
+    z-index: 0;
+    position: relative;
+  }
+
+  .polaroid a:after {
+    color: #333;
+    font-size: 1.2em;
+    content: attr(title);
+    position: relative;
+    top: 15px;
+  }
+
+  .polaroid img {
+    display: block; /* why use block instead of in-line block? */
+    width: 250px;
+  }
+
+  .polaroid a:hover {
+    /* -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2); */
+    transform: scale(1.2);
+    z-index: 10;
+    /* -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7); */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+  }
